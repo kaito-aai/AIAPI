@@ -1,0 +1,14 @@
+{
+  "name": "AIAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "kaito-aai <kaito.s0508@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chrome-types": "^0.1.388"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
