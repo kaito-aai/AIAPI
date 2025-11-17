@@ -6,5 +6,17 @@
   "action": {
     "default_popup": "hello.html",
     "default_icon": "./images/hello_extensions.png"
-  }
+  },
+  "permissions": ["contextMenus", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "dist/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["dist/content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
 }

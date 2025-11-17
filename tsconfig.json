@@ -1,8 +1,5 @@
 {
-  "exclude": [
-    "eslint.config.ts",
-    "./dist"
-  ],
+  "exclude": ["eslint.config.ts", "./dist"],
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
@@ -11,8 +8,9 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "esnext",
-    "types": [],
+    "module": "es2015",
+    "types": ["chrome-types", "dom-chromium-ai"],
+    "target": "esnext",
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -44,7 +42,7 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "auto",
     "skipLibCheck": true,
-
-    "version": true,
+    "allowJs": true,
+    "version": true
   }
 }
