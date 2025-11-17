@@ -1,3 +1,3 @@
-const message = "hello"
+const message = "hello";
 
-console.log(message)
+console.log(message);
